@@ -10,7 +10,7 @@ import matplotlib.patches as mpatches
 # Database connection
 conn = psycopg2.connect(
     dbname="tetris",
-    user="barbara"
+    user="fatima"
 )
 cur = conn.cursor()
 
