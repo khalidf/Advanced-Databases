@@ -8,7 +8,7 @@ static PGconn *conn = NULL;
 
 void init_db() {
     if (conn == NULL) {
-        conn = PQconnectdb("dbname=tetris user=barbara");
+        conn = PQconnectdb("dbname=tetris user=fatima");
         if (PQstatus(conn) != CONNECTION_OK) {
             fprintf(stderr, "Connection to database failed: %s", PQerrorMessage(conn));
             PQfinish(conn);
