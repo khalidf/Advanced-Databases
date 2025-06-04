@@ -43,7 +43,7 @@ void fetch_puzzles(PGconn *conn, FILE *outFile) {
 }
 
 int main() {
-    PGconn *conn = PQconnectdb("dbname=tetris user=barbara");
+    PGconn *conn = PQconnectdb("dbname=tetris user=fatima");
 
     if (PQstatus(conn) != CONNECTION_OK) {
         fprintf(stderr, "Connection failed: %s", PQerrorMessage(conn));
